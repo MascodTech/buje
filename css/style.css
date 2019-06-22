@@ -1,0 +1,1177 @@
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Gentium Book Basic', serif; 
+*/
+
+@font-face {
+    font-family: "Font Awesome 5 Brands";
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url("../fonts/webfonts/fa-brands-400.eot");
+    src: url("../fonts/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/webfonts/fa-brands-400.woff2") format("woff2"),
+        url("../fonts/webfonts/fa-brands-400.woff") format("woff"),
+        url("../fonts/webfonts/fa-brands-400.ttf") format("truetype"),
+        url("../fonts/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url("../fonts/webfonts/fa-regular-400.eot");
+    src: url("../fonts/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/webfonts/fa-regular-400.woff2") format("woff2"),
+        url("../fonts/webfonts/fa-regular-400.woff") format("woff"),
+        url("../fonts/webfonts/fa-regular-400.ttf") format("truetype"),
+        url("../fonts/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url("../fonts/webfonts/fa-solid-900.eot");
+    src: url("../fonts/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/webfonts/fa-solid-900.woff2") format("woff2"),
+        url("../fonts/webfonts/fa-solid-900.woff") format("woff"),
+        url("../fonts/webfonts/fa-solid-900.ttf") format("truetype"),
+        url("../fonts/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+/* ----------------------------
+    STYLES
+------------------------------- */
+
+body {
+    background-color: #fff;
+    font-weight: 400;
+    color: #99a0a8;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/* ----------------------------
+    HEADER
+------------------------------- */
+
+.header {
+    min-height: 100vh;
+    background: url("../img/header-bg.jpg") no-repeat center top / cover fixed;
+    border-top: 2px solid #ff6868;
+    z-index: 1;
+}
+
+.navbar {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.navbar-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.navbar-list li {
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.center-container {
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header-container {
+    padding-left: 0;
+}
+
+.header-title {
+    text-transform: uppercase;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgb(100, 63, 63)), to(rgb(255, 104, 104)));
+    background: -webkit-linear-gradient(bottom, rgb(100, 63, 63), rgb(255, 104, 104));
+    background: -o-linear-gradient(bottom, rgb(100, 63, 63), rgb(255, 104, 104));
+    background: linear-gradient(to top, rgb(100, 63, 63), rgb(255, 104, 104));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 70px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+}
+
+.header-text {
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.input-email {
+    border: none;
+    border-radius: 4px;
+    background-color: #4a515b;
+    height: 45px;
+    width: 335px;
+    padding-left: 25px;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #ffffff;
+    margin-right: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    margin-bottom: 33px;
+}
+
+.input-email::-webkit-input-placeholder {
+    color: #a2a2a2;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+.input-email:-ms-input-placeholder {
+    color: #a2a2a2;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+.input-email::-ms-input-placeholder {
+    color: #a2a2a2;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+.input-email::placeholder {
+    color: #a2a2a2;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+.btn-main {
+    text-transform: uppercase;
+    height: 45px;
+    width: 102px;
+    border: none;
+    border-radius: 7px;
+    background-color: #ff6868;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+}
+
+.soc {
+    margin-right: 22px;
+}
+
+.soc-1::before {
+    content: "\f39e";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Brands";
+    color: #ff6868;
+    border: 1px solid #ff6868;
+    border-radius: 50%;
+}
+
+.soc-2::before {
+    content: "\f099";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Brands";
+    color: #ff6868;
+    border: 1px solid #ff6868;
+    border-radius: 50%;
+}
+
+.soc-3::before {
+    content: "\f0e1";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    font-family: "Font Awesome 5 Brands", "Font Awesome 5 Free";
+    color: #ff6868;
+    border: 1px solid #ff6868;
+    border-radius: 50%;
+}
+
+.soc:hover::before {
+    color: #39414b;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#3d454f), color-stop(45%, #ff6868));
+    background-image: -webkit-linear-gradient(bottom, #3d454f 0%, #ff6868 45%);
+    background-image: -o-linear-gradient(bottom, #3d454f 0%, #ff6868 45%);
+    background-image: linear-gradient(to top, #3d454f 0%, #ff6868 45%);
+    border: none;
+}
+
+.container-soc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* ----------------------------
+    SERVICE
+------------------------------- */
+
+.service {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+}
+
+.section-service-title {
+    color: #3a424c;
+    font-size: 38px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.service .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.service-title {
+    font-size: 24px;
+    color: #3a424c;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 30px;
+}
+
+.service-text {
+    font-size: 16px;
+}
+
+.border-dashed {
+    padding: 0 192px;
+    margin-bottom: 35px;
+}
+
+.service-item-img {
+    margin-bottom: 25px;
+}
+
+/* ----------------------------
+    DESIGNER
+------------------------------- */
+
+.designer {
+    background: #38404a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.designer-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+}
+
+.designer-img {
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.designer-title {
+    font-size: 32px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgb(100, 63, 63)), to(rgb(255, 104, 104)));
+    background: -webkit-linear-gradient(bottom, rgb(100, 63, 63), rgb(255, 104, 104));
+    background: -o-linear-gradient(bottom, rgb(100, 63, 63), rgb(255, 104, 104));
+    background: linear-gradient(to top, rgb(100, 63, 63), rgb(255, 104, 104));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 27px;
+}
+
+.designer-subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.designer-text {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 22px;
+}
+
+.des-soc::before {
+    width: 38px;
+    height: 38px;
+}
+
+.progress-skills p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+
+.skills-title {
+    color: #ffffff;
+}
+
+.skills-percent {
+    color: #ff6868;
+}
+
+.progress {
+    background-color: #4a515b;
+    height: 4px;
+    border-radius: 0;
+}
+
+.progress-bar {
+    width: 84%;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#ca4f55), to(transparent));
+    background: -webkit-linear-gradient(left, transparent, #ca4f55, transparent);
+    background: -o-linear-gradient(left, transparent, #ca4f55, transparent);
+    background: linear-gradient(90deg, transparent, #ca4f55, transparent);
+}
+
+/* ----------------------------
+    APP
+------------------------------- */
+
+.app {
+    padding-top: 90px;
+    border-bottom: 2.8px solid #d7d8da;
+}
+
+.app-title {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(45%, #ff6868));
+    background-image: -webkit-linear-gradient(bottom, #ffffff 0%, #ff6868 45%);
+    background-image: -o-linear-gradient(bottom, #ffffff 0%, #ff6868 45%);
+    background-image: linear-gradient(to top, #ffffff 0%, #ff6868 45%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.app-text {
+    color: #99a0a8;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.app-block {
+    padding: 0;
+}
+
+.btn-app {
+    width: 132px;
+    height: 46px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #ff6868;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-app:hover {
+    color: #ffffff;
+}
+
+.app-img {
+    position: relative;
+    padding-top: 20px;
+}
+
+.app-img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -2px;
+}
+
+/* ----------------------------
+    PORTFOLIO
+------------------------------- */
+
+.portfolio {
+    padding-top: 90px;
+    text-align: center;
+}
+
+.portfolio-title {
+    color: #3a424c;
+    font-family: "Open Sans", sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.portfolio-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.portfolio-list li {
+    color: #99a0a8;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.nav-pills .nav-link {
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #ff6868;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.nav-pills .nav-link.active {
+    color: #ff6868;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid #ff6868;
+}
+
+.nav-item {
+    margin-right: 2px;
+}
+
+.nav-link {
+    padding: 10px 20px;
+}
+
+.portfolio-block-img {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 25%;
+    position: relative;
+}
+
+.portfolio-item .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(74, 86, 97, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.overlay-title {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#3d454f), color-stop(40%, #ff6868));
+    background-image: -webkit-linear-gradient(bottom, #3d454f 0%, #ff6868 40%);
+    background-image: -o-linear-gradient(bottom, #3d454f 0%, #ff6868 40%);
+    background-image: linear-gradient(to top, #3d454f 0%, #ff6868 40%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio-block-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #38404a;
+}
+
+.portfolio-footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.portfolio-footer img {
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+/* ----------------------------
+    BLOG
+------------------------------- */
+
+.blog {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.blog-title {
+    color: #3a424c;
+    font-family: "Open Sans", sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.blog-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.blog-item:hover .blog-item-title {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-5%, #fff), color-stop(60%, #ff6868));
+    background-image: -webkit-linear-gradient(bottom, #fff -5%, #ff6868 60%);
+    background-image: -o-linear-gradient(bottom, #fff -5%, #ff6868 60%);
+    background-image: linear-gradient(to top, #fff -5%, #ff6868 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.blog-item-title {
+    color: #3a424c;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.blog-item-subtitle {
+    color: #dddddd;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.blog-item-text {
+    color: #99a0a8;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.blog-img {
+    margin-right: 20px;
+}
+
+.btn-blog {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 143px;
+    height: 46px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 8px;
+    background-color: #ff6868;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn-blog:hover {
+    color: #ffffff;
+}
+
+.btn-blog::after {
+    content: "\f0e2";
+    display: block;
+    width: 13px;
+    height: 12px;
+    font-family: "Font Awesome 5 Free";
+    color: #ffffff;
+}
+
+.blog .container {
+    margin-bottom: 45px;
+}
+
+/* ----------------------------
+    SUBSCRIBE
+------------------------------- */
+
+.subscribe {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: url("../img/subscribe-bg.jpg") no-repeat center / cover;
+}
+
+.subscribe-title {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-5%, #3d454f), color-stop(60%, #ff6868));
+    background-image: -webkit-linear-gradient(bottom, #3d454f -5%, #ff6868 60%);
+    background-image: -o-linear-gradient(bottom, #3d454f -5%, #ff6868 60%);
+    background-image: linear-gradient(to top, #3d454f -5%, #ff6868 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.subscribe-text {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ----------------------------
+    PRICING
+------------------------------- */
+
+.pricing {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.pricing .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.pricing-title {
+    text-align: center;
+    color: #3a424c;
+    font-family: "Open Sans", sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.pricing-item {
+    border-radius: 10px;
+    border: 2px solid #f5f7f9;
+    background-color: #ffffff;
+    padding-bottom: 32px;
+}
+
+.pricing-item-header {
+    background-color: #3a424c;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 44px;
+    padding-bottom: 47px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.pricing-list {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.pricing-list li {
+    color: #99a0a8;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+}
+
+.pricing-list li::before {
+    content: "\f35a";
+    display: block;
+    width: 19px;
+    height: 19px;
+    font-family: "Font Awesome 5 Free";
+    color: #ff6868;
+    margin-right: 10px;
+}
+
+.pricing-item-title {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(-5%, #3d454f), color-stop(60%, #ff6868));
+    background-image: -webkit-linear-gradient(bottom, #3d454f -5%, #ff6868 60%);
+    background-image: -o-linear-gradient(bottom, #3d454f -5%, #ff6868 60%);
+    background-image: linear-gradient(to top, #3d454f -5%, #ff6868 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: "Open Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.pricing-item-subtitle {
+    color: #717a84;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pricing-item-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.pricing-item-price-num {
+    color: #ff6868;
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.pricing-item-price-value {
+    color: #ff6868;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.btn-pricing {
+    width: 102px;
+    height: 46px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 8px;
+    background-color: #ff6868;
+    margin: 0 auto;
+}
+
+.btn-pricing:hover {
+    color: #ffffff;
+}
+
+/* ----------------------------
+    TWITTER
+------------------------------- */
+
+.twitter {
+    background-color: #38404a;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    text-align: center;
+}
+
+.twitter .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.twitter-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.twitter-main-text {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 48px;
+    margin-bottom: 14px;
+}
+
+.twitter-tag-block {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.twitter-tag {
+    color: #ffffff;
+}
+
+.twitter-time {
+    color: #99a0a8;
+}
+
+.btn-twitter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: none;
+}
+
+.btn-twitter::before {
+    width: 38px;
+    height: 38px;
+    color: #39414b;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#3d454f), color-stop(45%, #ff6868));
+    background-image: -webkit-linear-gradient(bottom, #3d454f 0%, #ff6868 45%);
+    background-image: -o-linear-gradient(bottom, #3d454f 0%, #ff6868 45%);
+    background-image: linear-gradient(to top, #3d454f 0%, #ff6868 45%);
+}
+
+.btn-div {
+    width: 38px;
+    height: 38px;
+}
+
+/* ----------------------------
+    CONTACT
+------------------------------- */
+
+.contact {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.contact-title {
+    text-align: center;
+    color: #3a424c;
+    font-family: "Open Sans", sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.area {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f7f9;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    height: 46px;
+    width: 358px;
+    color: #878d94;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.area::-webkit-input-placeholder {
+    color: #a2a2a2;
+    text-transform: uppercase;
+}
+
+.area:-ms-input-placeholder {
+    color: #a2a2a2;
+    text-transform: uppercase;
+}
+
+.area::-ms-input-placeholder {
+    color: #a2a2a2;
+    text-transform: uppercase;
+}
+
+.area::placeholder {
+    color: #a2a2a2;
+    text-transform: uppercase;
+}
+
+.textarea {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    background-color: #f5f7f9;
+    border: none;
+    height: 256px;
+    min-height: 170px;
+    max-height: 450px;
+    color: #878d94;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.textarea::-webkit-input-placeholder {
+    text-transform: uppercase;
+    color: #a2a2a2;
+}
+
+.textarea:-ms-input-placeholder {
+    text-transform: uppercase;
+    color: #a2a2a2;
+}
+
+.textarea::-ms-input-placeholder {
+    text-transform: uppercase;
+    color: #a2a2a2;
+}
+
+.textarea::placeholder {
+    text-transform: uppercase;
+    color: #a2a2a2;
+}
+
+.form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.btn-contact {
+    width: 102px;
+    height: 46px;
+    border-radius: 8px;
+    background-color: #ff6868;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    border: none;
+}
+
+/* ----------------------------
+    FOOTER
+------------------------------- */
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #3a424c;
+}
+
+.footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.footer-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #ff6868;
+    border-top: 1px solid #49515c;
+    width: 263px;
+    padding-top: 8px;
+    margin-top: 6px;
+}
+
+.footer-span {
+    color: #99a0a8;
+}
+
+.footer-soc-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 110px;
+}
+
+.footer-soc::before {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    border: 2px solid #ff6868;
+}
